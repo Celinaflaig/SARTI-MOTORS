@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SARTI ROSA – A PINK SPRITZ</title>
+  <link rel="stylesheet" href="SartiRosa.css" />
+</head>
+<body>
+  <div class="page">
+
+    <!-- NEU: FIXE NAVIGATION OBEN -->
+    <header class="top-nav">
+      <div class="container nav-inner">
+        <div class="nav-left">
+          <span class="nav-logo">SARTI</span>
+          <span class="nav-model">SARTI ROSA</span>
+        </div>
+        <nav class="nav-links">
+          <a href="#highlights">Highlights</a>
+          <a href="#performance">Performance</a>
+          <a href="#interior">Interieur</a>
+          <a href="#tech-data">Technische Daten</a>
+        </nav>
+        <div class="nav-cta">
+          <button class="btn-ghost">Broschüre</button>
+          <button class="btn-primary">Probefahrt</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO: Vollbild mit Modell-Infos -->
+    <section class="hero" id="top">
+      <div class="hero-inner">
+        <div class="hero-image">
+          <!-- Dein Hero-Bild -->
+          <img src="Bild.png" alt="Sarti Rosa an der Küste"> 
+          <span class="image-placeholder-text">HERO-BILD EINSETZEN</span>
+
+          <div class="hero-overlay">
+            <div class="hero-overline">A PINK SPRITZ</div>
+            <h1 class="hero-title">SARTI ROSA</h1>
+            <p class="hero-subtitle">
+              Offener Sportwagen mit elektrisierender Pink-Signatur – gebaut für Kurven, gemacht für Gänsehaut.
+            </p>
+
+            <!-- NEU: Modell-Keyfacts ähnlich Porsche -->
+            <div class="hero-specs">
+              <div class="spec-pill">
+                <span class="spec-label">0–100 km/h</span>
+                <span class="spec-value">3,9 s*</span>
+              </div>
+              <div class="spec-pill">
+                <span class="spec-label">Leistung</span>
+                <span class="spec-value">340 kW / 462 PS*</span>
+              </div>
+              <div class="spec-pill">
+                <span class="spec-label">Top Speed</span>
+                <span class="spec-value">305 km/h*</span>
+              </div>
+            </div>
+
+            <div class="hero-actions">
+              <button class="btn-primary">Jetzt entdecken</button>
+              <button class="btn-ghost" onclick="document.getElementById('highlights').scrollIntoView({behavior:'smooth'});">
+                Zu den Highlights
+              </button>
+            </div>
+
+            <p class="hero-footnote">
+              *Vorläufige Werte – zur Visualisierung des Fahrzeugcharakters.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <!-- NEU: Kompakte Modellübersicht / Intro-Block -->
+      <section class="section section-model-summary">
+        <div class="container model-summary-grid">
+          <div>
+            <h2 class="section-heading">UNGEFILTERTE ENERGIE. NACH OBEN OFFEN.</h2>
+            <p>
+              SARTI ROSA ist ein puristischer Roadster für alle, die den Moment nicht nur erreichen,
+              sondern feiern wollen – mit jedem Kilometer.
+            </p>
+          </div>
+          <div class="model-summary-facts">
+            <div>
+              <span class="fact-label">Konzept</span>
+              <span class="fact-value">Mittelmotor-Roadster</span>
+            </div>
+            <div>
+              <span class="fact-label">Sitzplätze</span>
+              <span class="fact-value">2</span>
+            </div>
+            <div>
+              <span class="fact-label">Antrieb</span>
+              <span class="fact-value">Hochdrehzahl-Benziner</span>
+            </div>
+            <div>
+              <span class="fact-label">Charakter</span>
+              <span class="fact-value">A Pink Spritz</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION HIGHLIGHTS – ähnlich „Highlights.“ -->
+      <section class="section section-highlights" id="highlights">
+        <div class="container">
+          <h2 class="section-heading">SARTI ROSA HIGHLIGHTS</h2>
+
+          <div class="highlight-grid">
+            <article class="highlight-card">
+              <h3>Design mit Attitüde</h3>
+              <p>
+                Skulpturale Front, prägnante Flyline und das ikonische Rosa – eine Silhouette,
+                die schon im Stand wie in Bewegung wirkt.
+              </p>
+            </article>
+
+            <article class="highlight-card">
+              <h3>Leichtbau-Twist</h3>
+              <p>
+                Konsequent reduziertes Gewicht mit leichten Panels und einem minimalistischen
+                Verdeckkonzept – für mehr Dynamik in jeder Kurve.
+              </p>
+            </article>
+
+            <article class="highlight-card">
+              <h3>High-Rev Drive</h3>
+              <p>
+                Hochdrehzahlcharakter, direkter Antritt und ein Sound, der jede Drehzahl zu einem
+                eigenen Kapitel macht.
+              </p>
+            </article>
+
+            <article class="highlight-card">
+              <h3>Rosa Performance Package</h3>
+              <p>
+                Exklusive Details in Pink-Akzentfarbe, eigenständige Felgen-Designs und Interieur-
+                Akzente für maximale Wiedererkennbarkeit.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- DEIN SECTION TOP – leicht umbenannt und an „Design“-Block angelehnt -->
+      <section class="section section-top" id="design">
+        <div class="container section-top-grid">
+
+          <div class="section-top-text">
+            <h2 class="section-heading">EXTERIEUR – DESIGN WITH ATTITUDE</h2>
+            <p>Eine Form, die Blicke fängt.</p>
+            <p>Eine Farbe, die Herzen schneller schlagen lässt.</p>
+            <p>SARTI ROSA – a vibrant pink twist, gemacht für Sonnenuntergänge und Serpentinen.</p>
+          </div>
+
+          <div class="section-top-card">
+            <div class="card-image tall">
+              <!-- Bild der Front / Motorhaube -->
+              <span class="image-placeholder-text">
+                Bild „Front / Motorhaube / Detail“ einfügen
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION INSIDE – wird dein Interieur-Block -->
+      <section class="section section-inside" id="interior">
+        <div class="container">
+          <div class="inside-text">
+            <h2 class="section-heading white">INTERIEUR – INSIDE THE DRIVE</h2>
+            <p>Fahrerzentriertes Cockpit, klare Geometrien, echte Materialien.</p>
+            <p>Jede Berührung verbindet Technik, Emotion und diesen einen Rosa-Akzent.</p>
+          </div>
+
+          <div class="inside-image">
+            <!-- Interieur-Bild -->
+            <span class="image-placeholder-text">
+              Innenraum-Bild einfügen
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION PERFORMANCE – neu angelehnt an Porsche „Performance“ -->
+      <section class="section section-performance" id="performance">
+        <div class="container performance-grid">
+          <div class="performance-text">
+            <h2 class="section-heading">PERFORMANCE – BUILT FOR CURVES</h2>
+            <p>
+              Rennstreckengene, abgestimmt auf Bergpässe: Lenkpräzision, straffes Fahrwerk
+              und ein Antrieb, der Drehzahl liebt.
+            </p>
+            <p>
+              SARTI ROSA überträgt seine Energie kompromisslos auf die Straße – Kurve für Kurve.
+            </p>
+
+            <div class="performance-list">
+              <div>
+                <h3>High-Rev Engine</h3>
+                <p>Direkte Gasannahme, lineare Leistungsentfaltung, emotionaler Soundtrack.</p>
+              </div>
+              <div>
+                <h3>Adaptive Chassis</h3>
+                <p>Spezifische Abstimmung für maximale Traktion und präzises Einlenken.</p>
+              </div>
+              <div>
+                <h3>Braking Confidence</h3>
+                <p>Groß dimensionierte Bremsanlage für spürbare Verzögerung – auch nach vielen Kurven.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="performance-image">
+            <span class="image-placeholder-text">
+              Dynamik-Bild „Sarti Rosa in Kurve“ einfügen
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- DEINE SECTION FEELS – bleibt, passt gut zu „Emotion“-Teil -->
+      <section class="section section-feels">
+        <div class="container">
+          <div class="feels-text">
+            <h2 class="section-heading">A CAR THAT FEELS</h2>
+            <p>SARTI ist mehr als Mobilität – es ist die Verlängerung des italienischen Moments.</p>
+            <p>Jedes Modell ist eine Einladung, das Leben wieder zu fühlen.</p>
+          </div>
+
+          <div class="feels-gallery">
+            <!-- kleine Bilder wie bisher -->
+            <div class="gallery-item"><span class="image-placeholder-text">Bild 1</span></div>
+            <div class="gallery-item"><span class="image-placeholder-text">Bild 2</span></div>
+            <div class="gallery-item"><span class="image-placeholder-text">Bild 3</span></div>
+            <div class="gallery-item"><span class="image-placeholder-text">Bild 4</span></div>
+            <div class="gallery-item"><span class="image-placeholder-text">Bild 5</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- NEU: „Sound“-Teaser ähnlich „Gänsehaut. Im Ohr.“ -->
+      <section class="section section-sound">
+        <div class="container sound-inner">
+          <div class="sound-text">
+            <h2 class="section-heading">GÄNSEHAUT. IM OHR.</h2>
+            <p>9.000 U/min oder Sonnenuntergang im Leerlauf – SARTI ROSA klingt immer nach Aufbruch.</p>
+            <button class="btn-primary sound-button" id="soundButton">
+              Motorsound abspielen
+            </button>
+            <p class="sound-hint">Soundfile „sarti-rosa-engine.mp3“ im Hintergrund laden.</p>
+            <audio id="engineSound">
+              <source src="sarti-rosa-engine.mp3" type="audio/mpeg">
+            </audio>
+          </div>
+        </div>
+      </section>
+            <!-- NEU: PERFORMANCE-ZAHLEN WIE PORSCHE-SCREEN -->
+      <section class="section section-spec-hero" id="spec-hero">
+        <div class="container spec-hero-grid">
+          <div class="spec-hero-numbers">
+            <div class="spec-block">
+              <div class="spec-main">
+                3,9<span class="spec-unit">s</span>
+              </div>
+              <div class="spec-caption">Beschleunigung 0–100 km/h*</div>
+            </div>
+
+            <div class="spec-block">
+              <div class="spec-main">
+                340<span class="spec-unit">kW</span> /
+                462<span class="spec-unit">PS</span>
+              </div>
+              <div class="spec-caption">Leistung (kW) / Leistung (PS)*</div>
+            </div>
+
+            <div class="spec-block">
+              <div class="spec-main">
+                305<span class="spec-unit">km/h</span>
+              </div>
+              <div class="spec-caption">Höchstgeschwindigkeit*</div>
+            </div>
+
+            <button
+              class="btn-ghost spec-hero-button"
+              onclick="document.getElementById('tech-data').scrollIntoView({behavior:'smooth'});"
+            >
+              Alle technischen Details
+            </button>
+          </div>
+
+          <div class="spec-hero-image">
+            <!-- hier dein Render / Fahrzeug-Front einfügen -->
+            <span class="image-placeholder-text">
+              Frontansicht SARTI ROSA einfügen
+            </span>
+          </div>
+        </div>
+      </section>
+            <!-- NEU: PERFORMANCE-MODUL MIT TABS WIE PORSCHE -->
+      <section class="section section-perf-tabs" id="performance-details">
+        <div class="container">
+          <h2 class="section-heading">PERFORMANCE IM DETAIL</h2>
+          <p class="perf-tabs-lead">
+            Vom Antritt bis zur Verzögerung ist SARTI ROSA auf Dynamik ausgelegt.
+            Wähle einen Bereich aus, um die Technik dahinter zu entdecken.
+          </p>
+
+          <div class="perf-tabs-nav" role="tablist">
+            <button class="perf-tab is-active" data-tab="drive">
+              Antrieb &amp; Kraftübertragung
+            </button>
+            <button class="perf-tab" data-tab="chassis">
+              Fahrwerk
+            </button>
+            <button class="perf-tab" data-tab="control">
+              Regelsysteme
+            </button>
+            <button class="perf-tab" data-tab="brakes">
+              Bremsen
+            </button>
+          </div>
+
+          <div class="perf-tabs-content">
+            <article class="perf-panel is-active" data-tab-panel="drive">
+              <div class="perf-panel-text">
+                <h3>High-Rev Antrieb</h3>
+                <p>
+                  Hochdrehzahl-Motor, kurz gestufte Gänge und präzise Schaltwege
+                  für maximale Verbindung zwischen Fahrer und Maschine.
+                </p>
+              </div>
+              <div class="perf-panel-image">
+                <span class="image-placeholder-text">
+                  Illustration Motor / Antrieb einfügen
+                </span>
+              </div>
+            </article>
+
+            <article class="perf-panel" data-tab-panel="chassis">
+              <div class="perf-panel-text">
+                <h3>Fahrwerk</h3>
+                <p>
+                  Straffe, aber feinfühlige Abstimmung mit adaptiven Dämpfern
+                  für kurvenstarke Landstraßen und Trackdays.
+                </p>
+              </div>
+              <div class="perf-panel-image">
+                <span class="image-placeholder-text">
+                  Fahrwerks-/Kurvenbild einfügen
+                </span>
+              </div>
+            </article>
+
+            <article class="perf-panel" data-tab-panel="control">
+              <div class="perf-panel-text">
+                <h3>Regelsysteme</h3>
+                <p>
+                  Feingranulare Fahrdynamik-Regelung, die Performance zulässt
+                  und im Grenzbereich dezent unterstützt.
+                </p>
+              </div>
+              <div class="perf-panel-image">
+                <span class="image-placeholder-text">
+                  Grafik Fahrdynamik / Regelsysteme einfügen
+                </span>
+              </div>
+            </article>
+
+            <article class="perf-panel" data-tab-panel="brakes">
+              <div class="perf-panel-text">
+                <h3>Bremsen</h3>
+                <p>
+                  Groß dimensionierte Bremsanlage mit standfester Performance
+                  – auch nach vielen Kehren am Bergpass.
+                </p>
+              </div>
+              <div class="perf-panel-image">
+                <span class="image-placeholder-text">
+                  Bild Bremsscheibe / Rad einfügen
+                </span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- NEU: TECHNISCHE DATEN – kompakt -->
+      <section class="section section-tech" id="tech-data">
+        <div class="container">
+          <h2 class="section-heading">TECHNISCHE DATEN (AUSZUG)</h2>
+          <div class="tech-grid">
+            <div class="tech-group">
+              <h3>Antrieb</h3>
+              <ul>
+                <li>Motor: 6-Zylinder Hochdrehzahl-Benziner*</li>
+                <li>Hubraum: 3.9 l*</li>
+                <li>Leistung: 340 kW / 462 PS*</li>
+                <li>Max. Drehzahl: 9.000 1/min*</li>
+              </ul>
+            </div>
+            <div class="tech-group">
+              <h3>Fahrleistungen</h3>
+              <ul>
+                <li>0–100 km/h: 3,9 s*</li>
+                <li>Höchstgeschwindigkeit: 305 km/h*</li>
+              </ul>
+            </div>
+            <div class="tech-group">
+              <h3>Karosserie</h3>
+              <ul>
+                <li>Länge: ca. 4.40 m*</li>
+                <li>Breite: ca. 1.85 m*</li>
+                <li>Höhe: ca. 1.25 m*</li>
+              </ul>
+            </div>
+          </div>
+          <p class="tech-footnote">
+            *Beispielhafte, nicht verbindliche Werte – bitte durch deine eigenen Fahrzeugdaten ersetzen.
+          </p>
+        </div>
+      </section>
+
+      <!-- ZITAT & LOGO – kann bleiben wie bei dir -->
+      <section class="section section-quote">
+        <div class="container quote-inner">
+          <p class="quote-text">
+            “Like the perfect Aperitivo, Sarti transforms the ordinary into the extraordinary.
+            It’s not about getting there faster – it’s about arriving inspired.”
+          </p>
+
+          <div class="quote-logo">
+            <span class="image-placeholder-text">
+              Logo „SARTI ITALIA“ einfügen
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- DEINE TWIST-SECTION als Footer-Block -->
+      <section class="section section-twist">
+        <div class="container twist-inner">
+          <div class="twist-text">
+            <h2 class="section-heading white">FEEL THE TWIST OF FREEDOM</h2>
+            <p>SARTI ROSA ist mehr als ein Auto.</p>
+            <p>Es ist ein Gefühl von Energie, Leichtigkeit und italienischem Sommer.</p>
+            <p>Geboren für Kurven – gemacht für Gänsehaut.</p>
+          </div>
+
+          <div class="twist-image">
+            <span class="image-placeholder-text">
+              Großes Bild „Küste / Sonnenuntergang“ einfügen
+            </span>
+          </div>
+
+          <div class="twist-bottom">
+            <div class="twist-brand">
+              <h3>SARTI MOTORS</h3>
+              <p>More than a sports car.</p>
+            </div>
+
+            <div class="twist-footer-links">
+              <div class="footer-column">
+                <h4>Modelle</h4>
+                <ul>
+                  <li>SARTI ROSA</li>
+                  <li>SARTI NERO</li>
+                  <li>SARTI BIANCO</li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <h4>Erleben</h4>
+                <ul>
+                  <li>Probefahrt</li>
+                  <li>Events</li>
+                  <li>Stories</li>
+                  <li>Newsletter</li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <h4>Service</h4>
+                <ul>
+                  <li>Kontakt</li>
+                  <li>Support</li>
+                  <li>Rechtliches</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- kleines Script für Sound & Nav-Shadow -->
+  <script>
+    const soundButton = document.getElementById('soundButton');
+    const engineSound = document.getElementById('engineSound');
+    if (soundButton && engineSound) {
+      soundButton.addEventListener('click', () => {
+        if (engineSound.paused) {
+          engineSound.play();
+          soundButton.textContent = 'Sound stoppen';
+        } else {
+          engineSound.pause();
+          engineSound.currentTime = 0;
+          soundButton.textContent = 'Motorsound abspielen';
+        }
+      });
+    }
+
+    const nav = document.querySelector('.top-nav');
+    window.addEventListener('scroll', () => {
+      if (!nav) return;
+      if (window.scrollY > 20) {
+        nav.classList.add('nav-scrolled');
+      } else {
+        nav.classList.remove('nav-scrolled');
+      }
+    });
+        // Performance-Tabs
+    const perfTabs = document.querySelectorAll('.perf-tab');
+    const perfPanels = document.querySelectorAll('.perf-panel');
+
+    perfTabs.forEach((tab) => {
+      tab.addEventListener('click', () => {
+        const target = tab.getAttribute('data-tab');
+
+        perfTabs.forEach((t) => t.classList.remove('is-active'));
+        tab.classList.add('is-active');
+
+        perfPanels.forEach((panel) => {
+          const isTarget = panel.getAttribute('data-tab-panel') === target;
+          panel.classList.toggle('is-active', isTarget);
+        });
+      });
+    });
+
+  </script>
+</body>
+
+</html>
+

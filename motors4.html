@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarti Motors - Drive the Light</title>
+    <link rel="stylesheet" href="motors4.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navigation" class="nav">
+        <div class="container">
+            <div class="nav-content">
+                <!-- Logo -->
+                <a href="#" class="logo">
+                    <div class="logo-circle">
+                        <span class="logo-text">S.</span>
+                    </div>
+                    <span class="logo-brand">SARTI MOTORS</span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="nav-links">
+                    <a href="#philosophy">Philosophy</a>
+                    <a href="#design">Design</a>
+                    <a href="#innovation">Technology</a>
+                    <a href="#lifestyle">Lifestyle</a>
+                    <a href="#models">Models</a>
+                </div>
+
+                <!-- Desktop CTA -->
+                <div class="nav-cta">
+                    <button class="btn btn-primary">Design Yours</button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                    <svg class="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                    <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <div class="mobile-menu-content">
+                    <a href="#philosophy">Philosophy</a>
+                    <a href="#design">Design</a>
+                    <a href="#innovation">Technology</a>
+                    <a href="#lifestyle">Lifestyle</a>
+                    <a href="#models">Models</a>
+                    <button class="btn btn-primary">Book Visit</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1568930155292-e82d9e298a2a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0dXNjYW55JTIwc3Vuc2V0JTIwaGlsbHN8ZW58MXx8fHwxNzYxMDQ1OTk4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral')"></div>
+            <div class="hero-overlay"></div>
+            
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <span>SARTI MOTORS</span>
+                    </div>
+                    <h1 class="hero-title">Drive the Light.</h1>
+                    <p class="hero-subtitle">Italian emotion, electrified.</p>
+                    <button class="btn btn-primary btn-lg" onclick="scrollToSection('philosophy')">Experience Sarti Luce</button>
+                </div>
+
+                <div class="scroll-indicator" onclick="scrollToSection('philosophy')">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- Philosophy Section -->
+        <section id="philosophy" class="section section-light">
+            <div class="container">
+                <div class="two-col-grid">
+                    <div class="content-block">
+                        <span class="section-label">PHILOSOPHY</span>
+                        <h2 class="section-title">
+                            Driving as a feeling.<br>
+                            <span class="text-accent">Not as a function.</span>
+                        </h2>
+                        <div class="text-content">
+                            <p>Sarti Motors stands for emotional mobility. Like the perfect Aperitivo moment — it's not about the destination, it's about how you feel along the way.</p>
+                            <p>Inspired by Italian joie de vivre, every curve of the Sarti Luce mirrors the elegance of a summer evening. We design movement that touches, not just thrills.</p>
+                            <p>This is sustainable luxury infused with Italian sensuality. Electric power wrapped in the warmth of terracotta sunsets and the glow of Mediterranean light.</p>
+                        </div>
+                        <div class="tagline">
+                            <div class="tagline-line"></div>
+                            <span class="tagline-text">Sarti is movement that touches</span>
+                        </div>
+                    </div>
+
+                    <div class="image-block">
+                        <div class="image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1585832662436-68f00e636bf3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpdGFsaWFuJTIwY29hc3RhbCUyMHJvYWQlMjBzdW5zZXR8ZW58MXx8fHwxNzYxMDQ2OTM5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Italian coastal journey">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Design Section -->
+        <section id="design" class="section section-dark">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">DESIGN</span>
+                    <h2 class="section-title">
+                        Sensual Design.<br>
+                        <span class="text-accent">Technical Clarity.</span>
+                    </h2>
+                    <p class="section-description">Every curve inspired by Italian joie de vivre — where the form of a car mirrors the elegance of an Aperitivo glass.</p>
+                </div>
+
+                <div class="slideshow">
+                    <div class="slideshow-container">
+                        <div class="slide active" data-index="0">
+                            <img src="https://images.unsplash.com/photo-1641900409160-3d288c5a5805?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbGVnYW50JTIwY2FyJTIwY3VydmVzJTIwZ29sZHxlbnwxfHx8fDE3NjEwNDY5MTd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Sculpted by Light">
+                            <div class="slide-info">
+                                <h3>Sculpted by Light</h3>
+                                <p>Fluid forms inspired by the elegance of Italian evenings</p>
+                            </div>
+                        </div>
+                        <div class="slide" data-index="1">
+                            <img src="https://images.unsplash.com/photo-1661220715153-95724e5f3500?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBjYXIlMjBpbnRlcmlvciUyMHdhcm0lMjBsaWdodHxlbnwxfHx8fDE3NjEwNDY5MTd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Sensual Interior">
+                            <div class="slide-info">
+                                <h3>Sensual Interior</h3>
+                                <p>Crafted with Italian artisan materials and warm lighting</p>
+                            </div>
+                        </div>
+                        <div class="slide" data-index="2">
+                            <img src="https://images.unsplash.com/photo-1760552488647-bd5b7682c511?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzcG9ydHMlMjBjYXIlMjBzdW5zZXQlMjByZWZsZWN0aW9ufGVufDF8fHx8MTc2MTA0NjkxOHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Golden Hour">
+                            <div class="slide-info">
+                                <h3>Golden Hour</h3>
+                                <p>Every Sarti is designed to capture the warmth of sunset light</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slideshow-controls">
+                        <button class="slide-btn slide-prev" onclick="changeSlide(-1)">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="15 18 9 12 15 6"></polyline>
+                            </svg>
+                        </button>
+                        <div class="slide-dots">
+                            <button class="dot active" onclick="goToSlide(0)"></button>
+                            <button class="dot" onclick="goToSlide(1)"></button>
+                            <button class="dot" onclick="goToSlide(2)"></button>
+                        </div>
+                        <button class="slide-btn slide-next" onclick="changeSlide(1)">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Innovation Section -->
+        <section id="innovation" class="section section-light">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">TECHNOLOGY</span>
+                    <h2 class="section-title">
+                        Technology meets<br>
+                        <span class="text-accent">emotion.</span>
+                    </h2>
+                    <p class="section-description">Features designed to enhance the feeling, not just the function.</p>
+                </div>
+
+                <div class="innovation-grid">
+                    <div class="innovation-card">
+                        <div class="innovation-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                            </svg>
+                        </div>
+                        <h3>Electric Powertrain</h3>
+                        <p>Silent, powerful, and effortlessly refined — pure electric precision</p>
+                        <div class="innovation-line"></div>
+                    </div>
+
+                    <div class="innovation-card">
+                        <div class="innovation-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="5"></circle>
+                                <line x1="12" y1="1" x2="12" y2="3"></line>
+                                <line x1="12" y1="21" x2="12" y2="23"></line>
+                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                <line x1="1" y1="12" x2="3" y2="12"></line>
+                                <line x1="21" y1="12" x2="23" y2="12"></line>
+                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                            </svg>
+                        </div>
+                        <h3>Solar-Charge Roof</h3>
+                        <p>Glass roof that captures sunlight to extend your range naturally</p>
+                        <div class="innovation-line"></div>
+                    </div>
+
+                    <div class="innovation-card">
+                        <div class="innovation-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                            </svg>
+                        </div>
+                        <h3>Aperitivo Mode</h3>
+                        <p>Ambient scent and lighting moods that transform your cabin into an experience</p>
+                        <div class="innovation-line"></div>
+                    </div>
+
+                    <div class="innovation-card">
+                        <div class="innovation-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 18V5l12-2v13"></path>
+                                <circle cx="6" cy="18" r="3"></circle>
+                                <circle cx="18" cy="16" r="3"></circle>
+                            </svg>
+                        </div>
+                        <h3>Sarti Sound Atmosphere</h3>
+                        <p>Curated soundscapes designed for every journey — from Milan to the coast</p>
+                        <div class="innovation-line"></div>
+                    </div>
+                </div>
+
+                <div class="innovation-image">
+                    <img src="https://images.unsplash.com/photo-1665043548178-8e606eca11eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBhcmNoaXRlY3R1cmUlMjBtaW5pbWFsfGVufDF8fHx8MTc2MDk5NTQ3MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Innovation showcase">
+                </div>
+            </div>
+        </section>
+
+        <!-- Lifestyle Section -->
+        <section id="lifestyle" class="section section-lifestyle">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">LIFESTYLE</span>
+                    <h2 class="section-title">
+                        A Car That Feels<br>
+                        <span class="text-accent">Like a Feeling.</span>
+                    </h2>
+                    <p class="section-description-lg">
+                        Sarti is more than mobility — it's the continuation of the Italian moment.<br>
+                        Every model is an invitation to feel life again.
+                    </p>
+                </div>
+
+                <div class="lifestyle-grid">
+                    <div class="lifestyle-card">
+                        <img src="https://images.unsplash.com/photo-1564958068211-fc2c7f56167a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcGVyaXRpdm8lMjB0ZXJyYWNlJTIwZXZlbmluZ3xlbnwxfHx8fDE3NjEwNDU5OTh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Evening moments">
+                        <div class="lifestyle-overlay">
+                            <p>Evening moments</p>
+                        </div>
+                    </div>
+                    <div class="lifestyle-card">
+                        <img src="https://images.unsplash.com/photo-1756136283832-200e42fc3e53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWRpdGVycmFuZWFuJTIwYXJjaGl0ZWN0dXJlJTIwZ29sZHxlbnwxfHx8fDE3NjEwNDU5OTl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Mediterranean light">
+                        <div class="lifestyle-overlay">
+                            <p>Mediterranean light</p>
+                        </div>
+                    </div>
+                    <div class="lifestyle-card">
+                        <img src="https://images.unsplash.com/photo-1568930155292-e82d9e298a2a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0dXNjYW55JTIwc3Vuc2V0JTIwaGlsbHN8ZW58MXx8fHwxNzYxMDQ1OTk4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="The journey">
+                        <div class="lifestyle-overlay">
+                            <p>The journey</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quote-block">
+                    <blockquote>
+                        <p>"Like the perfect Aperitivo, Sarti transforms the ordinary into the extraordinary. It's not about getting there faster — it's about arriving inspired."</p>
+                        <div class="quote-attribution">
+                            <div class="quote-line"></div>
+                            <cite>SARTI MOTORS</cite>
+                            <div class="quote-line"></div>
+                        </div>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- Model Lineup Section -->
+        <section id="models" class="section section-dark">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">THE COLLECTION</span>
+                    <h2 class="section-title">
+                        Three expressions.<br>
+                        <span class="text-accent">One emotion.</span>
+                    </h2>
+                </div>
+
+                <div class="models-grid">
+                    <div class="model-card" data-model="0" onclick="selectModel(0)">
+                        <div class="model-icon" style="background-color: rgba(247, 37, 87, 0.13);">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#F72557" stroke-width="2">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                            </svg>
+                        </div>
+                        <h3>Sarti Luce</h3>
+                        <p class="model-subtitle">Light</p>
+                        <p class="model-description">Elegant coupé with sculpted lines and a glass roof that captures the glow of evening light.</p>
+                        <ul class="model-features">
+                            <li><span class="dot"></span>Coupé Design</li>
+                            <li><span class="dot"></span>Glass Solar Roof</li>
+                            <li><span class="dot"></span>Minimalist Interior</li>
+                        </ul>
+                        <button class="btn btn-outline">Explore Luce</button>
+                    </div>
+
+                    <div class="model-card" data-model="1" onclick="selectModel(1)">
+                        <div class="model-icon" style="background-color: rgba(139, 115, 85, 0.13);">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#8b7355" stroke-width="2">
+                                <path d="M8 3L4 9l4 6 4-6-4-6z"></path>
+                                <path d="M16 3l4 6-4 6-4-6 4-6z"></path>
+                            </svg>
+                        </div>
+                        <h3>Sarti Ombra</h3>
+                        <p class="model-subtitle">Shadow</p>
+                        <p class="model-description">Powerful SUV with dark elegance and commanding presence for those who lead.</p>
+                        <ul class="model-features">
+                            <li><span class="dot"></span>SUV Performance</li>
+                            <li><span class="dot"></span>Elevated Seating</li>
+                            <li><span class="dot"></span>All-Season Capability</li>
+                        </ul>
+                        <button class="btn btn-outline">Explore Ombra</button>
+                    </div>
+
+                    <div class="model-card" data-model="2" onclick="selectModel(2)">
+                        <div class="model-icon" style="background-color: rgba(168, 213, 226, 0.13);">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#a8d5e2" stroke-width="2">
+                                <path d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path>
+                                <path d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path>
+                                <path d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"></path>
+                            </svg>
+                        </div>
+                        <h3>Sarti Mare</h3>
+                        <p class="model-subtitle">Sea</p>
+                        <p class="model-description">Light and playful cabriolet designed for coastal roads and open horizons.</p>
+                        <ul class="model-features">
+                            <li><span class="dot"></span>Cabriolet Freedom</li>
+                            <li><span class="dot"></span>Open-Air Experience</li>
+                            <li><span class="dot"></span>Coastal Spirit</li>
+                        </ul>
+                        <button class="btn btn-outline">Explore Mare</button>
+                    </div>
+                </div>
+
+                <div class="models-cta">
+                    <p>Each model limited to 50 units per year — handcrafted to order.</p>
+                    <button class="btn btn-primary btn-lg">Reserve Your Sarti</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brand Section -->
+        <section id="brand" class="section section-dark">
+            <div class="container">
+                <div class="brand-container">
+                    <div class="section-header">
+                        <span class="section-label">THE BRAND</span>
+                        <h2 class="section-title">Sarti Motors</h2>
+                        <p class="brand-tagline">Driven by Emotion</p>
+                    </div>
+
+                    <div class="manifesto">
+                        <p>Born from the spirit of Italian joy.</p>
+                        <p>We believe speed can be soft.</p>
+                        <p>And power can be poetic.</p>
+                        <p>Driven by emotion, not function.</p>
+                    </div>
+
+                    <div class="brand-story-grid">
+                        <div class="brand-image">
+                            <img src="https://images.unsplash.com/photo-1722411927625-0e478acf502b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpdGFsaWFuJTIwYXJ0aXNhbiUyMHdvcmtzaG9wJTIwY3JhZnRzbWFuc2hpcHxlbnwxfHx8fDE3NjEwNDY5NTB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral" alt="Italian craftsmanship">
+                            <div class="brand-logo-overlay">
+                                <div class="brand-logo-circle">
+                                    <span>S.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="brand-story">
+                            <p>Sarti Motors was born from a simple belief: driving should feel like a perfect summer evening in Italy — warm, luminous, and unforgettable.</p>
+                            <p>We translate the essence of Italian lifestyle into motion. Design inspired by light, sound, and the Mediterranean spirit. Sustainable electric vehicles infused with the sensuality of an Aperitivo sunset.</p>
+                            <p>Sarti doesn't build cars. We create experiences on wheels. Each vehicle — from the elegant Luce to the powerful Ombra and playful Mare — is crafted for design-driven aesthetes who understand that true luxury is a feeling.</p>
+                            <div class="brand-signature">
+                                <div class="signature-line"></div>
+                                <p>Sarti doesn't build cars. We create experiences on wheels.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section section-light">
+            <div class="container">
+                <div class="cta-container">
+                    <div class="cta-main">
+                        <h2 class="section-title">Design Your Sarti</h2>
+                        <p class="cta-description">Begin your journey with a private consultation at our Milan atelier. Discover how we can craft your perfect expression of Italian emotion.</p>
+                        <div class="cta-buttons">
+                            <button class="btn btn-dark btn-lg">
+                                Configure Your Sarti
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                </svg>
+                            </button>
+                            <button class="btn btn-outline-accent btn-lg">Book Milan Atelier Visit</button>
+                        </div>
+                    </div>
+
+                    <div class="newsletter">
+                        <h3>Stay Inspired</h3>
+                        <p>Join our community to receive updates on limited releases, Milan atelier events, and stories of emotional mobility.</p>
+                        <form class="newsletter-form" id="newsletterForm">
+                            <input type="email" placeholder="Enter your email" required>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </form>
+                        <div class="newsletter-success" id="newsletterSuccess">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <span>Welcome to Sarti Motors. Prepare to be inspired.</span>
+                        </div>
+                    </div>
+
+                    <div class="stats-grid">
+                        <div class="stat">
+                            <div class="stat-value">50</div>
+                            <div class="stat-label">Units per year</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">100%</div>
+                            <div class="stat-label">Handcrafted</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">∞</div>
+                            <div class="stat-label">Character</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Banner -->
+        <section class="final-cta-banner">
+            <div class="container">
+                <div class="final-cta-content">
+                    <div class="final-cta-logo">
+                        <span>S.</span>
+                    </div>
+                    <h2>Design Your Sarti</h2>
+                    <p>
+                        Begin your journey into emotional mobility.<br>
+                        Choose your expression: Luce, Ombra, or Mare.
+                    </p>
+                    <button class="btn btn-white btn-lg">
+                        Start Your Configuration
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </button>
+                    <p class="final-cta-quote">"Sarti doesn't build cars. We create experiences on wheels."</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span>S.</span>
+                    </div>
+                    <p>Driving as a feeling, not as a function. Italian emotion, electrified.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="YouTube">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Email">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Models</h4>
+                    <ul>
+                        <li><a href="#">Sarti Luce</a></li>
+                        <li><a href="#">Sarti Ombra</a></li>
+                        <li><a href="#">Sarti Mare</a></li>
+                        <li><a href="#">Configure Yours</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>Via Montenapoleone, 8</li>
+                        <li>20121 Milano, Italy</li>
+                        <li><a href="tel:+390212345678">+39 02 1234 5678</a></li>
+                        <li><a href="mailto:hello@sartimotors.com">hello@sartimotors.com</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 Sarti Motors. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="scroll-animations.js" defer></script>
+</body>
+</html>
+
+
+

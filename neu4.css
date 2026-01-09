@@ -1,0 +1,510 @@
+/* ================ GLOBAL ================ */
+:root {
+    --pink: #ff4b8b;
+    --pink-dark: #e03371;
+    --pink-bg: #ff3d77;
+    --text-main: #111;
+    --text-muted: #555;
+    --bg-light: #ffffff;
+    --bg-grey: #f6f6f6;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: var(--text-main);
+    background: var(--bg-light);
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.section {
+    padding: 4rem 0;
+}
+
+/* ================ BUTTONS ================ */
+.btn {
+    display: inline-block;
+    padding: 0.9rem 1.9rem;
+    border-radius: 999px;
+    background: var(--pink);
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+    background: var(--pink-dark);
+}
+
+.btn-small {
+    padding: 0.6rem 1.4rem;
+    font-size: 0.75rem;
+}
+
+.btn-light {
+    background: #fff;
+    color: var(--pink);
+}
+
+.btn-light:hover {
+    background: #ffe6f1;
+}
+
+.btn-outline-dark {
+    background: transparent;
+    color: var(--text-main);
+    border: 1px solid #ccc;
+}
+
+.btn-outline-dark:hover {
+    background: #111;
+    color: #fff;
+}
+
+/* ================ IMAGE PLACEHOLDERS ================ */
+.image-placeholder {
+    position: relative;
+    background: #d7d7d7;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.image-placeholder::after {
+    content: "Bildplatzhalter – hier später dein Bild einfügen";
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    text-align: center;
+    color: #666;
+    font-size: 0.8rem;
+}
+
+/* ================ HERO / HEADER ================ */
+.hero {
+    position: relative;
+    min-height: 90vh;
+    color: #fff;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    border-radius: 0;
+    background: linear-gradient(120deg, #ff4b8b, #ff9b52);
+    /* SPÄTER: background-image:url('dein-hero.jpg'); background-size:cover; background-position:center; */
+}
+
+.hero-inner {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+}
+
+/* NAV BAR */
+.hero-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.4rem;
+}
+
+.brand {
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    font-size: 0.9rem;
+}
+
+.nav-links a {
+    color: #fff;
+}
+
+.nav-links .btn-light {
+    font-size: 0.75rem;
+}
+
+/* HERO TEXT */
+.hero-content {
+    margin-top: auto;
+    padding-bottom: 4.5rem;
+}
+
+.hero-kicker {
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    font-size: 0.75rem;
+}
+
+.hero-title {
+    margin-top: 0.7rem;
+    font-size: clamp(2.4rem, 4.8vw, 3.6rem);
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+/* ================ SPECS ================ */
+.specs {
+    background: #fff;
+}
+
+.specs-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.1fr);
+    gap: 2.8rem;
+    align-items: center;
+}
+
+.specs-text {
+    max-width: 360px;
+}
+
+.spec {
+    margin-bottom: 1.7rem;
+}
+
+.spec-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--pink);
+}
+
+.spec-label {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.specs-btn {
+    margin-top: 0.5rem;
+}
+
+.specs-image {
+    aspect-ratio: 3 / 4;
+}
+
+/* ================ SECTION HEADINGS ================ */
+.section-title {
+    text-align: center;
+    font-size: 1.1rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    max-width: 580px;
+    margin: 0 auto;
+}
+
+/* ================ HIGHLIGHTS ================ */
+.highlights {
+    background: var(--pink-bg);
+    color: #fff;
+}
+
+.highlights .section-subtitle {
+    color: #ffe3f0;
+}
+
+.highlights-row {
+    margin-top: 2.8rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+/* Karten wie auf Screenshot: Bild + Text unten links drübergelegt */
+.highlight {
+    position: relative;
+    border-radius: 22px;
+    overflow: hidden;
+}
+
+.highlight-image {
+    aspect-ratio: 16 / 9;
+    background: #c6487d;
+}
+
+.highlight-text.overlay {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 1.6rem 2rem;
+    background: linear-gradient(to top, rgba(0,0,0,0.65), transparent);
+    font-size: 0.9rem;
+}
+
+.highlight-kicker {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-bottom: 0.4rem;
+}
+
+.highlight-title {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+}
+
+/* ================ QUOTE BLOCK ================ */
+.quote {
+    background: #fff;
+    text-align: center;
+}
+
+.quote-logo {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.19em;
+    font-size: 0.8rem;
+    margin-bottom: 0.9rem;
+}
+
+.quote-text {
+    max-width: 640px;
+    margin: 0 auto;
+    font-size: 1rem;
+}
+
+/* ================ LIFESTYLE + MODELLE ================ */
+.lifestyle-models {
+    background: #fff;
+}
+
+/* Lifestyle-Bilder ähnlich dem Layout im Screenshot */
+.lifestyle-grid {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    align-items: start;
+}
+
+.lifestyle-large {
+    aspect-ratio: 16 / 9;
+}
+
+.lifestyle-medium {
+    aspect-ratio: 4 / 3;
+}
+
+/* zweite Spalte mit zwei Bildern */
+.lifestyle-grid > .lifestyle-medium:last-child {
+    margin-top: 1.2rem;
+}
+
+.models-header {
+    margin-top: 0.5rem;
+}
+
+.models-grid {
+    margin-top: 2.8rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.model-card {
+    border-radius: 18px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+}
+
+.model-image {
+    aspect-ratio: 4 / 3;
+}
+
+.model-body {
+    padding: 1.4rem 1.5rem 1.6rem;
+    font-size: 0.9rem;
+}
+
+.model-name {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    margin-bottom: 0.5rem;
+}
+
+/* ================ FREEDOM HERO ================= */
+.freedom {
+    position: relative;
+    margin-top: 3rem;
+}
+
+.freedom-image {
+    aspect-ratio: 16 / 7;
+    border-radius: 0;
+}
+
+.freedom-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.freedom-content {
+    pointer-events: auto;
+    text-align: center;
+    color: #fff;
+    padding: 2.8rem 1.5rem 3.5rem;
+    max-width: 620px;
+    background: linear-gradient(to top, rgba(0,0,0,0.65), transparent);
+}
+
+.freedom-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0.6rem;
+}
+
+/* ================ FOOTER ================ */
+.footer {
+    background: var(--pink-bg);
+    color: #fff;
+    padding: 3.5rem 0 2.5rem;
+    margin-top: 3rem;
+}
+
+.footer-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.footer-logo {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.75rem;
+    margin-bottom: 0.6rem;
+}
+
+.footer-columns {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.6rem;
+    font-size: 0.85rem;
+}
+
+.footer-title {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    margin-bottom: 0.5rem;
+}
+
+.footer-col a {
+    display: block;
+    margin-bottom: 0.3rem;
+    color: #ffe9f4;
+    font-size: 0.8rem;
+}
+
+/* ================ RESPONSIVE ================ */
+@media (max-width: 900px) {
+    .specs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .models-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .footer-columns {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        min-height: 80vh;
+    }
+
+    .hero-content {
+        padding-bottom: 3rem;
+    }
+
+    .lifestyle-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .lifestyle-grid > .lifestyle-medium:last-child {
+        margin-top: 0;
+    }
+
+    .freedom-content {
+        padding-bottom: 2.4rem;
+    }
+}
+
+@media (max-width: 620px) {
+    .nav-links {
+        gap: 0.9rem;
+        font-size: 0.8rem;
+    }
+
+    .nav-links .btn-light {
+        padding: 0.45rem 0.9rem;
+    }
+
+    .models-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-columns {
+        grid-template-columns: 1fr;
+    }
+}
